@@ -9,9 +9,7 @@
         "build": "tsc",
         "start:dist": "node dist/src/index.js",
         "lint": "eslint --fix \"src/**/*.{ts,tsx}\"",
-        "typecheck": "tsc --noEmit",
-        "format": "pretty-quick --staged",
-        "prepare": "cd .. && husky api/.husky"
+        "typecheck": "tsc --noEmit"
     },
     "keywords": [],
     "license": "MIT",
@@ -35,10 +33,8 @@
         "eslint-config-prettier": "^9.1.0",
         "eslint-import-resolver-typescript": "^3.6.1",
         "eslint-plugin-import": "^2.29.1",
-        "husky": "^9.0.11",
         "nodemon": "^3.1.0",
         "prettier": "^3.2.5",
-        "pretty-quick": "^4.0.0",
         "prisma": "^5.14.0",
         "ts-node": "^10.9.2",
         "typescript": "^5.4.5",
