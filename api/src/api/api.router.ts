@@ -1,9 +1,9 @@
-import express from 'express'
+import express, { Request, Response } from 'express'
 import MessageResponse from '../types/interfaces/MessageResponse'
 
 const router = express.Router()
 
-router.get<{}, MessageResponse>('/healthcheck', (_, res) => {
+router.get('/healthcheck', (req: Request, res: Response<MessageResponse>) => {
     res.sendStatus(200)
 })
 

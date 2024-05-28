@@ -7,6 +7,10 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './src'),
+            '@api/schemas': path.resolve(
+                __dirname,
+                './../api/src/api/api.schemas.ts',
+            ),
         },
     },
 })
